@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieInCinema"
+
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+
+        android:layout_width="1120dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/adse"
+        android:translationX="-100dp" />
+
+    <TextView
+        android:id="@+id/authoraddingtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="524dp"
+        android:fontFamily="sans-serif"
+        android:text="Break copy rights 2018  | ADDING NEW MOVIE IN A CINEMA"
+        android:textColor="@color/editTextYellowColor"
+        android:textSize="8sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20sp"
+        android:paddingTop="30sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/cinemahasMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cinema`s Name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/movieInCinemaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Movie`s Name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/MovinInCinemaTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Starting at (hh:mm:ss)"
+                android:inputType="time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/MovineIncCinemaPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Price "
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                android:textColor="@color/editTextYellowColor"
+                android:textColorHint="#80FFF700"
+                android:textSize="14sp" />
+
+
+
+            <Button
+                android:id="@+id/addMovineInCinemaBtn"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+
+                android:background="@android:color/holo_orange_light"
+                android:text="ADD NOW"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
